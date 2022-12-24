@@ -1,0 +1,73 @@
+:root {
+    --primary-green: #596f70;
+    --primary-tan: #fbefe2;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-green);
+    color: var(--primary-tan);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+.card-content1 {
+    padding: 1.5em;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0), 
+        hsl(0 0% 0% / 0.3) 10%,
+        hsl(0 0% 0% / 1)); 
+}
+
+.card1 {
+    color: white;
+    background-image: url("images/books (small).jpg");
+    background-color: var(--primary-green);
+    background-size: cover;
+    padding: 10rem 0 0;
+    margin: 1rem;
+    max-width: 300px;
+    border-radius: .75rem;
+    overflow: hidden;
+
+    transition: transform 500ms ease;
+}
+
+.card1:hover {
+    transform: scale(1.02);
+}
+
+.card-button1 {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: .5em 1.25em;
+    border-radius: .25rem;
+}
+
+.card-button1:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+//Idea 2//
+
+
