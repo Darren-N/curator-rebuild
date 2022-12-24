@@ -26,12 +26,9 @@ h1 {
     margin: 1rem;
 }
 
-.card-content1 {
-    padding: 1.5em;
-    background: linear-gradient(
-        hsl(0 0% 0% / 0), 
-        hsl(0 0% 0% / 0.3) 10%,
-        hsl(0 0% 0% / 1)); 
+.cards1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .card1 {
@@ -41,7 +38,7 @@ h1 {
     background-size: cover;
     padding: 10rem 0 0;
     margin: 1rem;
-    max-width: 300px;
+    max-width: 240px;
     border-radius: .75rem;
     overflow: hidden;
 
@@ -50,6 +47,14 @@ h1 {
 
 .card1:hover {
     transform: scale(1.02);
+}
+
+.card-content1 {
+    padding: 1.5em;
+    background: linear-gradient(
+        hsl(0 0% 0% / 0), 
+        hsl(0 0% 0% / 0.3) 10%,
+        hsl(0 0% 0% / 1)); 
 }
 
 .card-button1 {
