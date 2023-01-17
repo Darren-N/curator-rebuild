@@ -3,76 +3,116 @@
     --primary-tan: #fbefe2;
 }
 
-
-
 body {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
-    margin: 0;
+    margin-left: 400px;
+    margin-right: 400px;
+    box-sizing: border-box;
 }
 
 header {
+    font-size: 3em;
+    color: var(--primary-green);
+}
+
+.feature > img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    opacity: .2;
+}
+
+.feature {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.feature__content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.poem {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 2.4em;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+    .poem {
+        font-size: 1.1em;
+        font-weight: 400;
+        line-height: 2.4em;
+        margin-bottom: 0;
+    }
+}
+
+.about__content {
+    font-weight: 600;
+    margin-top: 0;
+    padding-bottom: 16px;
+}
+
+@media screen and (max-width: 750px) {
+    .about__content {
+        font-size: .7em;
+        font-weight: 600;
+        margin-top: 0;
+        padding-bottom: 16px;
+    }
+}
+
+.feature__content > a {
+    font-weight: lighter;
+    border: 0;
+    margin-bottom: 25px;
     background-color: var(--primary-green);
-    color: var(--primary-tan);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-
-    font-weight: bold;
-    font-style: italic;
-}
-
-h1 {
-    margin: 1rem;
-}
-
-.cards1 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.card1 {
     color: white;
-    background-image: url("images/books (small).jpg");
-    background-color: var(--primary-green);
-    background-size: cover;
-    padding: 10rem 0 0;
-    margin: 1rem;
-    max-width: 240px;
-    border-radius: .75rem;
-    overflow: hidden;
-
-    transition: transform 500ms ease;
-}
-
-.card1:hover {
-    transform: scale(1.02);
-}
-
-.card-content1 {
-    padding: 1.5em;
-    background: linear-gradient(
-        hsl(0 0% 0% / 0), 
-        hsl(0 0% 0% / 0.3) 10%,
-        hsl(0 0% 0% / 1)); 
-}
-
-.card-button1 {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    background-color: white;
-    color: black;
-    padding: .5em 1.25em;
+    padding: .5rem 1rem;
     border-radius: .25rem;
+    gap: .85em;
+    text-decoration: none;
+    text-align: center;
+
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
 
-.card-button1:hover {
+.cards {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+
+    height: 325PX;
+}
+
+.card {
     background-color: var(--primary-green);
-    color: white;
+    cursor: pointer;
 }
 
-//Idea 2//
+.card:hover {
+    background-color: var(--primary-tan);
+}
 
+.big-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 1rem;
 
+    height: 325px;
+}
+
+.big-card {
+    background-color: var(--primary-green);
+}
